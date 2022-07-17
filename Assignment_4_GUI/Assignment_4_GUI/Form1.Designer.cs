@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbl_Number = new System.Windows.Forms.Label();
             this.lbl_InventoryNumber = new System.Windows.Forms.Label();
             this.lbl_Date = new System.Windows.Forms.Label();
@@ -42,6 +43,10 @@
             this.txt_Count = new System.Windows.Forms.TextBox();
             this.txt_Price = new System.Windows.Forms.TextBox();
             this.dt_dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_Number
@@ -88,7 +93,7 @@
             // 
             this.lbl_Count.AutoSize = true;
             this.lbl_Count.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Count.Location = new System.Drawing.Point(68, 248);
+            this.lbl_Count.Location = new System.Drawing.Point(275, 170);
             this.lbl_Count.Name = "lbl_Count";
             this.lbl_Count.Size = new System.Drawing.Size(74, 25);
             this.lbl_Count.TabIndex = 4;
@@ -98,7 +103,7 @@
             // 
             this.lbl_Price.AutoSize = true;
             this.lbl_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Price.Location = new System.Drawing.Point(272, 259);
+            this.lbl_Price.Location = new System.Drawing.Point(479, 170);
             this.lbl_Price.Name = "lbl_Price";
             this.lbl_Price.Size = new System.Drawing.Size(66, 25);
             this.lbl_Price.TabIndex = 5;
@@ -106,7 +111,7 @@
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(73, 328);
+            this.btn_Add.Location = new System.Drawing.Point(280, 250);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(142, 29);
             this.btn_Add.TabIndex = 6;
@@ -116,7 +121,7 @@
             // 
             // btn_Cancel
             // 
-            this.btn_Cancel.Location = new System.Drawing.Point(305, 328);
+            this.btn_Cancel.Location = new System.Drawing.Point(512, 250);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(142, 29);
             this.btn_Cancel.TabIndex = 7;
@@ -140,21 +145,21 @@
             // 
             // txt_ObjectName
             // 
-            this.txt_ObjectName.Location = new System.Drawing.Point(73, 215);
+            this.txt_ObjectName.Location = new System.Drawing.Point(73, 210);
             this.txt_ObjectName.Name = "txt_ObjectName";
             this.txt_ObjectName.Size = new System.Drawing.Size(142, 20);
             this.txt_ObjectName.TabIndex = 10;
             // 
             // txt_Count
             // 
-            this.txt_Count.Location = new System.Drawing.Point(73, 288);
+            this.txt_Count.Location = new System.Drawing.Point(280, 210);
             this.txt_Count.Name = "txt_Count";
             this.txt_Count.Size = new System.Drawing.Size(142, 20);
             this.txt_Count.TabIndex = 11;
             // 
             // txt_Price
             // 
-            this.txt_Price.Location = new System.Drawing.Point(277, 288);
+            this.txt_Price.Location = new System.Drawing.Point(473, 210);
             this.txt_Price.Name = "txt_Price";
             this.txt_Price.Size = new System.Drawing.Size(142, 20);
             this.txt_Price.TabIndex = 12;
@@ -166,11 +171,24 @@
             this.dt_dateTimePicker.Size = new System.Drawing.Size(180, 20);
             this.dt_dateTimePicker.TabIndex = 13;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(73, 297);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(577, 146);
+            this.dataGridView1.TabIndex = 14;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dt_dateTimePicker);
             this.Controls.Add(this.txt_Price);
             this.Controls.Add(this.txt_Count);
@@ -187,6 +205,8 @@
             this.Controls.Add(this.lbl_Number);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,6 +228,8 @@
         private System.Windows.Forms.TextBox txt_Count;
         private System.Windows.Forms.TextBox txt_Price;
         private System.Windows.Forms.DateTimePicker dt_dateTimePicker;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
