@@ -14,15 +14,36 @@ namespace Assignment_4_GUI
 {
     public partial class Form1 : Form
     {
-
-        public Form1()
+        /***
+         * 
+         * checked list box to add many 
+         * */
+        LoginForm Log;
+        public Form1(LoginForm Login)
         {
+            Log = Login;
             InitializeComponent();
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
 
+            string s = "";
+            /**
+             * foreach loop
+             * 
+             * **/
+            foreach (var item in chk_options.CheckedItems)
+            {
+                s += item.ToString();
+            }
+            MessageBox.Show(s);
+            
+            /**
+             * by default they are in one geoup
+             * Radio button needs a group box
+             * 
+             * **/
             Regex checkPrice = new Regex(@"^[0-9]+.[0-9]{2}$");
             Regex checkNumber = new Regex(@"^[0-9]+$");
             
@@ -31,6 +52,7 @@ namespace Assignment_4_GUI
                 if (!checkPrice.IsMatch(txt_Price.Text))
                 {
                     errorProvider1.SetError(txt_Price, "Price must be 4 digit postive decimal ");
+                    
                 }
                 else
                 {
@@ -85,7 +107,6 @@ namespace Assignment_4_GUI
                 {
                     errorProvider1.SetError(txt_InventoryNumber, "");
                 }
-
             }
             else
             {
@@ -99,6 +120,34 @@ namespace Assignment_4_GUI
                     Inventory_Num = txt_InventoryNumber.Text,
                     Date = dt_dateTimePicker.Text
                 };
+                if (rbTeleBirr.Checked)
+                {
+                    item.Payment = rbTeleBirr.Text;
+                }
+                else
+                {
+                    item.Payment = rbGpay.Text;
+                }
+                int i = 0;
+                foreach(var Items in chk_options.Items)
+                {
+                   
+                    if (i == 0)
+                    {
+                        if (Items.Equals(item.isAvailable)) ;
+                        else item.isAvailable = true;
+                             
+                    }
+                    else if (i == 1)
+                    {
+                        if (Items.Equals(item.FreeDelivery)) ;
+                        else 
+                        item.FreeDelivery =  false;
+                    }
+                    i++;
+                    
+                }
+
                 item.save();
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = Item.GetAllItems();
@@ -109,6 +158,11 @@ namespace Assignment_4_GUI
         {
             this.Close();
         }
-        
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Log.Show();
+        }
     }
 }

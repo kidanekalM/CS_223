@@ -19,6 +19,10 @@ namespace Assignment_4_GUI.Model
         public string price{ get; set; }
         public string Count { get; set; }
 
+        public bool isAvailable { get; set; }
+        public string Payment { get; set; }
+        public bool FreeDelivery { get; set; }
+
         public void save()
         {
             Items.Add(this);

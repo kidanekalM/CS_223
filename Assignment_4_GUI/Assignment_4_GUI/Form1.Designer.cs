@@ -45,15 +45,21 @@
             this.dt_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.chk_options = new System.Windows.Forms.CheckedListBox();
+            this.gboxPayment = new System.Windows.Forms.GroupBox();
+            this.rbGpay = new System.Windows.Forms.RadioButton();
+            this.rbTeleBirr = new System.Windows.Forms.RadioButton();
+            this.btnLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.gboxPayment.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_Number
             // 
             this.lbl_Number.AutoSize = true;
             this.lbl_Number.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Number.Location = new System.Drawing.Point(68, 52);
+            this.lbl_Number.Location = new System.Drawing.Point(87, 31);
             this.lbl_Number.Name = "lbl_Number";
             this.lbl_Number.Size = new System.Drawing.Size(93, 25);
             this.lbl_Number.TabIndex = 0;
@@ -63,7 +69,7 @@
             // 
             this.lbl_InventoryNumber.AutoSize = true;
             this.lbl_InventoryNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_InventoryNumber.Location = new System.Drawing.Point(453, 52);
+            this.lbl_InventoryNumber.Location = new System.Drawing.Point(387, 31);
             this.lbl_InventoryNumber.Name = "lbl_InventoryNumber";
             this.lbl_InventoryNumber.Size = new System.Drawing.Size(197, 25);
             this.lbl_InventoryNumber.TabIndex = 1;
@@ -73,7 +79,7 @@
             // 
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Date.Location = new System.Drawing.Point(234, 52);
+            this.lbl_Date.Location = new System.Drawing.Point(229, 31);
             this.lbl_Date.Name = "lbl_Date";
             this.lbl_Date.Size = new System.Drawing.Size(61, 25);
             this.lbl_Date.TabIndex = 2;
@@ -83,7 +89,7 @@
             // 
             this.lbl_ObjectName.AutoSize = true;
             this.lbl_ObjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ObjectName.Location = new System.Drawing.Point(68, 170);
+            this.lbl_ObjectName.Location = new System.Drawing.Point(90, 135);
             this.lbl_ObjectName.Name = "lbl_ObjectName";
             this.lbl_ObjectName.Size = new System.Drawing.Size(147, 25);
             this.lbl_ObjectName.TabIndex = 3;
@@ -93,7 +99,7 @@
             // 
             this.lbl_Count.AutoSize = true;
             this.lbl_Count.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Count.Location = new System.Drawing.Point(275, 170);
+            this.lbl_Count.Location = new System.Drawing.Point(257, 135);
             this.lbl_Count.Name = "lbl_Count";
             this.lbl_Count.Size = new System.Drawing.Size(74, 25);
             this.lbl_Count.TabIndex = 4;
@@ -103,7 +109,7 @@
             // 
             this.lbl_Price.AutoSize = true;
             this.lbl_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Price.Location = new System.Drawing.Point(479, 170);
+            this.lbl_Price.Location = new System.Drawing.Point(416, 135);
             this.lbl_Price.Name = "lbl_Price";
             this.lbl_Price.Size = new System.Drawing.Size(66, 25);
             this.lbl_Price.TabIndex = 5;
@@ -111,7 +117,7 @@
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(280, 250);
+            this.btn_Add.Location = new System.Drawing.Point(86, 237);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(142, 29);
             this.btn_Add.TabIndex = 6;
@@ -121,7 +127,7 @@
             // 
             // btn_Cancel
             // 
-            this.btn_Cancel.Location = new System.Drawing.Point(512, 250);
+            this.btn_Cancel.Location = new System.Drawing.Point(442, 237);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(142, 29);
             this.btn_Cancel.TabIndex = 7;
@@ -131,42 +137,42 @@
             // 
             // txt_Number
             // 
-            this.txt_Number.Location = new System.Drawing.Point(73, 113);
+            this.txt_Number.Location = new System.Drawing.Point(92, 73);
             this.txt_Number.Name = "txt_Number";
             this.txt_Number.Size = new System.Drawing.Size(142, 20);
             this.txt_Number.TabIndex = 8;
             // 
             // txt_InventoryNumber
             // 
-            this.txt_InventoryNumber.Location = new System.Drawing.Point(458, 113);
+            this.txt_InventoryNumber.Location = new System.Drawing.Point(418, 73);
             this.txt_InventoryNumber.Name = "txt_InventoryNumber";
             this.txt_InventoryNumber.Size = new System.Drawing.Size(142, 20);
             this.txt_InventoryNumber.TabIndex = 9;
             // 
             // txt_ObjectName
             // 
-            this.txt_ObjectName.Location = new System.Drawing.Point(73, 210);
+            this.txt_ObjectName.Location = new System.Drawing.Point(95, 163);
             this.txt_ObjectName.Name = "txt_ObjectName";
             this.txt_ObjectName.Size = new System.Drawing.Size(142, 20);
             this.txt_ObjectName.TabIndex = 10;
             // 
             // txt_Count
             // 
-            this.txt_Count.Location = new System.Drawing.Point(280, 210);
+            this.txt_Count.Location = new System.Drawing.Point(248, 163);
             this.txt_Count.Name = "txt_Count";
             this.txt_Count.Size = new System.Drawing.Size(142, 20);
             this.txt_Count.TabIndex = 11;
             // 
             // txt_Price
             // 
-            this.txt_Price.Location = new System.Drawing.Point(473, 210);
+            this.txt_Price.Location = new System.Drawing.Point(395, 163);
             this.txt_Price.Name = "txt_Price";
             this.txt_Price.Size = new System.Drawing.Size(142, 20);
             this.txt_Price.TabIndex = 12;
             // 
             // dt_dateTimePicker
             // 
-            this.dt_dateTimePicker.Location = new System.Drawing.Point(239, 113);
+            this.dt_dateTimePicker.Location = new System.Drawing.Point(234, 73);
             this.dt_dateTimePicker.Name = "dt_dateTimePicker";
             this.dt_dateTimePicker.Size = new System.Drawing.Size(180, 20);
             this.dt_dateTimePicker.TabIndex = 13;
@@ -183,11 +189,69 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // chk_options
+            // 
+            this.chk_options.BackColor = System.Drawing.SystemColors.Control;
+            this.chk_options.FormattingEnabled = true;
+            this.chk_options.Items.AddRange(new object[] {
+            "Availabliliy",
+            "Free Delivery "});
+            this.chk_options.Location = new System.Drawing.Point(588, 85);
+            this.chk_options.Name = "chk_options";
+            this.chk_options.Size = new System.Drawing.Size(97, 34);
+            this.chk_options.TabIndex = 16;
+            // 
+            // gboxPayment
+            // 
+            this.gboxPayment.Controls.Add(this.rbGpay);
+            this.gboxPayment.Controls.Add(this.rbTeleBirr);
+            this.gboxPayment.Location = new System.Drawing.Point(587, 135);
+            this.gboxPayment.Name = "gboxPayment";
+            this.gboxPayment.Size = new System.Drawing.Size(98, 70);
+            this.gboxPayment.TabIndex = 18;
+            this.gboxPayment.TabStop = false;
+            this.gboxPayment.Text = "Payment";
+            // 
+            // rbGpay
+            // 
+            this.rbGpay.AutoSize = true;
+            this.rbGpay.Location = new System.Drawing.Point(6, 42);
+            this.rbGpay.Name = "rbGpay";
+            this.rbGpay.Size = new System.Drawing.Size(48, 17);
+            this.rbGpay.TabIndex = 2;
+            this.rbGpay.TabStop = true;
+            this.rbGpay.Text = "gpay";
+            this.rbGpay.UseVisualStyleBackColor = true;
+            // 
+            // rbTeleBirr
+            // 
+            this.rbTeleBirr.AutoSize = true;
+            this.rbTeleBirr.Location = new System.Drawing.Point(6, 19);
+            this.rbTeleBirr.Name = "rbTeleBirr";
+            this.rbTeleBirr.Size = new System.Drawing.Size(60, 17);
+            this.rbTeleBirr.TabIndex = 1;
+            this.rbTeleBirr.TabStop = true;
+            this.rbTeleBirr.Text = "Telebirr\r\n";
+            this.rbTeleBirr.UseVisualStyleBackColor = true;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(743, 19);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(48, 25);
+            this.btnLogout.TabIndex = 19;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLogout);
+            this.Controls.Add(this.gboxPayment);
+            this.Controls.Add(this.chk_options);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dt_dateTimePicker);
             this.Controls.Add(this.txt_Price);
@@ -207,6 +271,8 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.gboxPayment.ResumeLayout(false);
+            this.gboxPayment.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,6 +296,11 @@
         private System.Windows.Forms.DateTimePicker dt_dateTimePicker;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.CheckedListBox chk_options;
+        private System.Windows.Forms.GroupBox gboxPayment;
+        private System.Windows.Forms.RadioButton rbGpay;
+        private System.Windows.Forms.RadioButton rbTeleBirr;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
 

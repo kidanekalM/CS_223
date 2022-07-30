@@ -9,3 +9,4 @@ C:\Users\hp\Desktop\New folder\code\C#\CS_223\Assignment_4_GUI\Assignment_4_GUI\
 C:\Users\hp\Desktop\New folder\code\C#\CS_223\Assignment_4_GUI\Assignment_4_GUI\obj\Debug\Assignment_4_GUI.csproj.CoreCompileInputs.cache
 C:\Users\hp\Desktop\New folder\code\C#\CS_223\Assignment_4_GUI\Assignment_4_GUI\obj\Debug\Assignment_4_GUI.exe
 C:\Users\hp\Desktop\New folder\code\C#\CS_223\Assignment_4_GUI\Assignment_4_GUI\obj\Debug\Assignment_4_GUI.pdb
+C:\Users\hp\Desktop\New folder\code\C#\CS_223\Assignment_4_GUI\Assignment_4_GUI\obj\Debug\Assignment_4_GUI.LoginForm.resources

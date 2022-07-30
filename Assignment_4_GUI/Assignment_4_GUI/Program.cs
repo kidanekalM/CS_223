@@ -7,7 +7,9 @@ using System.Windows.Forms;
 namespace Assignment_4_GUI
 {
     internal static class Program
-    {
+    {/**
+      * create login and logout 
+      **/
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,7 @@ namespace Assignment_4_GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new LoginForm());
         }
     }
 }
