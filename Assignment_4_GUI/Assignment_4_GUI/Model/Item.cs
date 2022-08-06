@@ -33,5 +33,13 @@ namespace Assignment_4_GUI.Model
             return Items;
             
         }
+        public static Item SearchByName(string s)
+        {
+            return GetAllItems().Find( item => item.ObjectName  == s);
+        }
+        public static Item SearchByInventoryNumber (string inventoryNumber)
+        {
+            return GetAllItems().Find(x => x.Inventory_Num == inventoryNumber);
+        }
     }
 }

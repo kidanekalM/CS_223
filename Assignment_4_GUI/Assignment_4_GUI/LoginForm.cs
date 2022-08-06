@@ -12,6 +12,7 @@ namespace Assignment_4_GUI
 {
     public partial class LoginForm : Form
     {
+        public string username { get; set; }
         public LoginForm()
         {
             InitializeComponent();
@@ -22,7 +23,9 @@ namespace Assignment_4_GUI
             if (txt_Username.Text == "Abebe" && txt_Password.Text == "0")
             {
             Hide();
-            Form1 f = new Form1(this);
+                username = txt_Username.Text;
+
+            MainContainer f = new MainContainer(this);
                 f.Show();
             }
             else

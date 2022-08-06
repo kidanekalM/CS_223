@@ -19,10 +19,14 @@ namespace Assignment_4_GUI
          * checked list box to add many 
          * */
         LoginForm Log;
+        Item item;
+       
         public Form1(LoginForm Login)
         {
             Log = Login;
             InitializeComponent();
+            MessageBox.Show(Login.username);
+            lbl_username.Text = Log.username;
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
@@ -111,7 +115,7 @@ namespace Assignment_4_GUI
             else
             {
                 errorProvider1.Clear();
-                Item item = new Item()
+                item = new Item()
                 {
                     Number = txt_Number.Text,
                     ObjectName = txt_ObjectName.Text,
@@ -132,13 +136,13 @@ namespace Assignment_4_GUI
                 foreach(var Items in chk_options.Items)
                 {
                    
-                    if (i == 0)
+                    if (i == 1)
                     {
                         if (Items.Equals(item.isAvailable)) ;
                         else item.isAvailable = true;
                              
                     }
-                    else if (i == 1)
+                    else if (i == 0)
                     {
                         if (Items.Equals(item.FreeDelivery)) ;
                         else 
@@ -163,6 +167,25 @@ namespace Assignment_4_GUI
         {
             this.Close();
             Log.Show();
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Item i = Item.SearchByName(txt_search.Text);
+                MessageBox.Show($"{i.ObjectName}\n{i.Count}\n{i.Inventory_Num}\n{i.Number}\n{i.Date}\n{i.price}");
+            }
+            catch(Exception c)
+            {
+                MessageBox.Show("No results found!");
+            }
+        }
+
+        private void btn_searchByIN_Click(object sender, EventArgs e)
+        {
+            Item i = Item.SearchByInventoryNumber(txt_INsearch.Text);
+            MessageBox.Show($"{i.ObjectName}\n{i.Number}\n{i.Count}\n{i.Payment}\n{i.Date}\n{i.price}");
         }
     }
 }
