@@ -33,9 +33,9 @@ namespace Assignment_4_GUI.Model
             return Items;
             
         }
-        public static Item SearchByName(string s)
+        public static List<Item> SearchByName(string s)
         {
-            return GetAllItems().Find( item => item.ObjectName  == s);
+            return GetAllItems().FindAll( item => item.ObjectName  == s);
         }
         public static Item SearchByInventoryNumber (string inventoryNumber)
         {
