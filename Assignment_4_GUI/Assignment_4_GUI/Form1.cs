@@ -173,8 +173,13 @@ namespace Assignment_4_GUI
         {
             try
             {
-                Item i = Item.SearchByName(txt_search.Text);
-                MessageBox.Show($"{i.ObjectName}\n{i.Count}\n{i.Inventory_Num}\n{i.Number}\n{i.Date}\n{i.price}");
+                List<Item> i = Item.SearchByName(txt_search.Text);
+                string all = "";
+                foreach (Item n in i)
+                {
+                    all += n.ObjectName + "\n";
+                }
+                MessageBox.Show(all);
             }
             catch(Exception c)
             {
