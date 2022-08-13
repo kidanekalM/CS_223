@@ -28,7 +28,23 @@ namespace Assignment_4_GUI
             Form1 form = new Form1(loginForm);
             form.MdiParent = this;
             form.Show();
+           
+        }
 
+        private void MainContainer_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            loginForm.Show();
+        }
+
+        private void viewProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            ViewProductCard vpd = new ViewProductCard();
+            vpd.MdiParent = this;
+            vpd.Show();
         }
     }
 }

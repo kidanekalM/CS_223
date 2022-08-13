@@ -11,3 +11,6 @@ C:\Users\hp\Desktop\New folder\code\C#\CS_223\Assignment_4_GUI\Assignment_4_GUI\
 C:\Users\hp\Desktop\New folder\code\C#\CS_223\Assignment_4_GUI\Assignment_4_GUI\obj\Debug\Assignment_4_GUI.pdb
 C:\Users\hp\Desktop\New folder\code\C#\CS_223\Assignment_4_GUI\Assignment_4_GUI\obj\Debug\Assignment_4_GUI.LoginForm.resources
 C:\Users\hp\Desktop\New folder\code\C#\CS_223\Assignment_4_GUI\Assignment_4_GUI\obj\Debug\Assignment_4_GUI.MainContainer.resources
+C:\Users\hp\Desktop\New folder\code\C#\CS_223\Assignment_4_GUI\Assignment_4_GUI\obj\Debug\Assignment_4_GUI.ProductCard.resources
+C:\Users\hp\Desktop\New folder\code\C#\CS_223\Assignment_4_GUI\Assignment_4_GUI\obj\Debug\Assignment_4_GUI.ViewProductCard.resources
+C:\Users\hp\Desktop\New folder\code\C#\CS_223\Assignment_4_GUI\Assignment_4_GUI\obj\Debug\Assignment_4_GUI.FlowTest.resources

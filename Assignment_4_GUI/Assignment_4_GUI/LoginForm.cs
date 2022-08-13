@@ -20,7 +20,7 @@ namespace Assignment_4_GUI
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txt_Username.Text == "Abebe" && txt_Password.Text == "0")
+            if (txt_Username.Text == "Admin" && txt_Password.Text == "0")
             {
             Hide();
                 username = txt_Username.Text;
