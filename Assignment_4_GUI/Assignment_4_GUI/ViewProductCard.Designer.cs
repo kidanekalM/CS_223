@@ -37,6 +37,7 @@
             this.lbl_red = new System.Windows.Forms.Label();
             this.pnl_rightMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.productCard1 = new Assignment_4_GUI.ProductCard();
+            this.productCard2 = new Assignment_4_GUI.ProductCard();
             this.pnl_Leftmenu.SuspendLayout();
             this.pnl_rightMenu.SuspendLayout();
             this.SuspendLayout();
@@ -127,8 +128,9 @@
             // pnl_rightMenu
             // 
             this.pnl_rightMenu.Controls.Add(this.productCard1);
+            this.pnl_rightMenu.Controls.Add(this.productCard2);
             this.pnl_rightMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_rightMenu.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.pnl_rightMenu.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.pnl_rightMenu.Location = new System.Drawing.Point(108, 0);
             this.pnl_rightMenu.Name = "pnl_rightMenu";
             this.pnl_rightMenu.Size = new System.Drawing.Size(692, 450);
@@ -139,13 +141,25 @@
             this.productCard1.BackColor = System.Drawing.SystemColors.Control;
             this.productCard1.Desc = "21";
             this.productCard1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.productCard1.Location = new System.Drawing.Point(3, 3);
+            this.productCard1.Location = new System.Drawing.Point(12, 3);
             this.productCard1.Name = "productCard1";
             this.productCard1.Price = "21";
-            this.productCard1.Size = new System.Drawing.Size(677, 104);
+            this.productCard1.Size = new System.Drawing.Size(677, 0);
             this.productCard1.TabIndex = 0;
             this.productCard1.Title = "21";
             this.productCard1.Load += new System.EventHandler(this.productCard1_Load);
+            // 
+            // productCard2
+            // 
+            this.productCard2.BackColor = System.Drawing.SystemColors.Control;
+            this.productCard2.Desc = null;
+            this.productCard2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.productCard2.Location = new System.Drawing.Point(15, 9);
+            this.productCard2.Name = "productCard2";
+            this.productCard2.Price = null;
+            this.productCard2.Size = new System.Drawing.Size(674, 132);
+            this.productCard2.TabIndex = 1;
+            this.productCard2.Title = null;
             // 
             // ViewProductCard
             // 
@@ -156,6 +170,7 @@
             this.Controls.Add(this.pnl_Leftmenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ViewProductCard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ViewProductCard";
             this.Load += new System.EventHandler(this.ViewProductCard_Load);
             this.pnl_Leftmenu.ResumeLayout(false);
@@ -176,5 +191,6 @@
         private System.Windows.Forms.Panel pnl_highlight;
         private System.Windows.Forms.FlowLayoutPanel pnl_rightMenu;
         private ProductCard productCard1;
+        private ProductCard productCard2;
     }
 }

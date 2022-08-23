@@ -57,17 +57,31 @@ namespace Assignment_4_GUI
             }*/
 
         }
-
+        /**
+         * obj.Click = functionName;
+         * obj.Click { } -- amonymous fun
+         * private void name (Object o , Eventargs e)
+         */
         private void ViewProductCard_Load(object sender, EventArgs e)
         {
             pnl_rightMenu.Controls.Clear();
             foreach (var Item in Model.Item.GetAllItems())
             {
                 ProductCard pc = new ProductCard(Item.ObjectName, (float)Double.Parse(Item.price), Item.Number, Item.isAvailable);
+                
+                pc.Click += (object o, EventArgs ea)=>{ new DetailPage(Item); };
+                pc.Dock = DockStyle.Top;
+                pc.Width = 674;
                 pnl_rightMenu.Controls.Add(pc);
             }
 
 
         }
+        private void Event (object o, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

@@ -55,16 +55,18 @@
             this.txt_search = new System.Windows.Forms.TextBox();
             this.txt_INsearch = new System.Windows.Forms.TextBox();
             this.btn_searchByIN = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.gboxPayment.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_Number
             // 
             this.lbl_Number.AutoSize = true;
             this.lbl_Number.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Number.Location = new System.Drawing.Point(198, 45);
+            this.lbl_Number.Location = new System.Drawing.Point(3, 0);
             this.lbl_Number.Name = "lbl_Number";
             this.lbl_Number.Size = new System.Drawing.Size(93, 25);
             this.lbl_Number.TabIndex = 0;
@@ -74,7 +76,7 @@
             // 
             this.lbl_InventoryNumber.AutoSize = true;
             this.lbl_InventoryNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_InventoryNumber.Location = new System.Drawing.Point(498, 45);
+            this.lbl_InventoryNumber.Location = new System.Drawing.Point(3, 135);
             this.lbl_InventoryNumber.Name = "lbl_InventoryNumber";
             this.lbl_InventoryNumber.Size = new System.Drawing.Size(197, 25);
             this.lbl_InventoryNumber.TabIndex = 1;
@@ -84,7 +86,7 @@
             // 
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Date.Location = new System.Drawing.Point(340, 45);
+            this.lbl_Date.Location = new System.Drawing.Point(3, 90);
             this.lbl_Date.Name = "lbl_Date";
             this.lbl_Date.Size = new System.Drawing.Size(61, 25);
             this.lbl_Date.TabIndex = 2;
@@ -94,7 +96,7 @@
             // 
             this.lbl_ObjectName.AutoSize = true;
             this.lbl_ObjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ObjectName.Location = new System.Drawing.Point(201, 149);
+            this.lbl_ObjectName.Location = new System.Drawing.Point(3, 45);
             this.lbl_ObjectName.Name = "lbl_ObjectName";
             this.lbl_ObjectName.Size = new System.Drawing.Size(147, 25);
             this.lbl_ObjectName.TabIndex = 3;
@@ -104,7 +106,7 @@
             // 
             this.lbl_Count.AutoSize = true;
             this.lbl_Count.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Count.Location = new System.Drawing.Point(368, 149);
+            this.lbl_Count.Location = new System.Drawing.Point(3, 180);
             this.lbl_Count.Name = "lbl_Count";
             this.lbl_Count.Size = new System.Drawing.Size(74, 25);
             this.lbl_Count.TabIndex = 4;
@@ -114,7 +116,7 @@
             // 
             this.lbl_Price.AutoSize = true;
             this.lbl_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Price.Location = new System.Drawing.Point(527, 149);
+            this.lbl_Price.Location = new System.Drawing.Point(3, 225);
             this.lbl_Price.Name = "lbl_Price";
             this.lbl_Price.Size = new System.Drawing.Size(66, 25);
             this.lbl_Price.TabIndex = 5;
@@ -122,7 +124,7 @@
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(86, 237);
+            this.btn_Add.Location = new System.Drawing.Point(125, 332);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(142, 29);
             this.btn_Add.TabIndex = 6;
@@ -132,7 +134,7 @@
             // 
             // btn_Cancel
             // 
-            this.btn_Cancel.Location = new System.Drawing.Point(442, 237);
+            this.btn_Cancel.Location = new System.Drawing.Point(481, 332);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(142, 29);
             this.btn_Cancel.TabIndex = 7;
@@ -142,42 +144,42 @@
             // 
             // txt_Number
             // 
-            this.txt_Number.Location = new System.Drawing.Point(203, 87);
+            this.txt_Number.Location = new System.Drawing.Point(209, 3);
             this.txt_Number.Name = "txt_Number";
-            this.txt_Number.Size = new System.Drawing.Size(142, 20);
+            this.txt_Number.Size = new System.Drawing.Size(180, 20);
             this.txt_Number.TabIndex = 8;
             // 
             // txt_InventoryNumber
             // 
-            this.txt_InventoryNumber.Location = new System.Drawing.Point(529, 87);
+            this.txt_InventoryNumber.Location = new System.Drawing.Point(209, 138);
             this.txt_InventoryNumber.Name = "txt_InventoryNumber";
-            this.txt_InventoryNumber.Size = new System.Drawing.Size(142, 20);
+            this.txt_InventoryNumber.Size = new System.Drawing.Size(180, 20);
             this.txt_InventoryNumber.TabIndex = 9;
             // 
             // txt_ObjectName
             // 
-            this.txt_ObjectName.Location = new System.Drawing.Point(206, 177);
+            this.txt_ObjectName.Location = new System.Drawing.Point(209, 48);
             this.txt_ObjectName.Name = "txt_ObjectName";
-            this.txt_ObjectName.Size = new System.Drawing.Size(142, 20);
+            this.txt_ObjectName.Size = new System.Drawing.Size(180, 20);
             this.txt_ObjectName.TabIndex = 10;
             // 
             // txt_Count
             // 
-            this.txt_Count.Location = new System.Drawing.Point(359, 177);
+            this.txt_Count.Location = new System.Drawing.Point(209, 183);
             this.txt_Count.Name = "txt_Count";
-            this.txt_Count.Size = new System.Drawing.Size(142, 20);
+            this.txt_Count.Size = new System.Drawing.Size(180, 20);
             this.txt_Count.TabIndex = 11;
             // 
             // txt_Price
             // 
-            this.txt_Price.Location = new System.Drawing.Point(506, 177);
+            this.txt_Price.Location = new System.Drawing.Point(209, 228);
             this.txt_Price.Name = "txt_Price";
-            this.txt_Price.Size = new System.Drawing.Size(142, 20);
+            this.txt_Price.Size = new System.Drawing.Size(180, 20);
             this.txt_Price.TabIndex = 12;
             // 
             // dt_dateTimePicker
             // 
-            this.dt_dateTimePicker.Location = new System.Drawing.Point(345, 87);
+            this.dt_dateTimePicker.Location = new System.Drawing.Point(209, 93);
             this.dt_dateTimePicker.Name = "dt_dateTimePicker";
             this.dt_dateTimePicker.Size = new System.Drawing.Size(180, 20);
             this.dt_dateTimePicker.TabIndex = 13;
@@ -185,9 +187,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(73, 297);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 367);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(575, 146);
+            this.dataGridView1.Size = new System.Drawing.Size(736, 76);
             this.dataGridView1.TabIndex = 14;
             // 
             // errorProvider1
@@ -210,7 +212,7 @@
             // 
             this.gboxPayment.Controls.Add(this.rbGpay);
             this.gboxPayment.Controls.Add(this.rbTeleBirr);
-            this.gboxPayment.Location = new System.Drawing.Point(690, 127);
+            this.gboxPayment.Location = new System.Drawing.Point(690, 134);
             this.gboxPayment.Name = "gboxPayment";
             this.gboxPayment.Size = new System.Drawing.Size(98, 70);
             this.gboxPayment.TabIndex = 18;
@@ -292,11 +294,41 @@
             this.btn_searchByIN.UseVisualStyleBackColor = true;
             this.btn_searchByIN.Click += new System.EventHandler(this.btn_searchByIN_Click);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.lbl_Number, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txt_Number, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_ObjectName, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txt_ObjectName, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_Date, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.dt_dateTimePicker, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_InventoryNumber, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txt_InventoryNumber, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_Count, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txt_Count, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txt_Price, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_Price, 0, 5);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(210, 19);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(413, 271);
+            this.tableLayoutPanel1.TabIndex = 25;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.txt_INsearch);
             this.Controls.Add(this.btn_searchByIN);
             this.Controls.Add(this.txt_search);
@@ -306,27 +338,18 @@
             this.Controls.Add(this.gboxPayment);
             this.Controls.Add(this.chk_options);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dt_dateTimePicker);
-            this.Controls.Add(this.txt_Price);
-            this.Controls.Add(this.txt_Count);
-            this.Controls.Add(this.txt_ObjectName);
-            this.Controls.Add(this.txt_InventoryNumber);
-            this.Controls.Add(this.txt_Number);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_Add);
-            this.Controls.Add(this.lbl_Price);
-            this.Controls.Add(this.lbl_Count);
-            this.Controls.Add(this.lbl_ObjectName);
-            this.Controls.Add(this.lbl_Date);
-            this.Controls.Add(this.lbl_InventoryNumber);
-            this.Controls.Add(this.lbl_Number);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.gboxPayment.ResumeLayout(false);
             this.gboxPayment.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,6 +383,7 @@
         private System.Windows.Forms.Button btn_searchByName;
         private System.Windows.Forms.TextBox txt_INsearch;
         private System.Windows.Forms.Button btn_searchByIN;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
 

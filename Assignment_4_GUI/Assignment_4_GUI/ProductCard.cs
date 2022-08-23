@@ -47,6 +47,7 @@ namespace Assignment_4_GUI
 
             this.Price = price.ToString();
             this.Desc = description;
+            this.Title = Name;
             if (!availability)
             {
                 this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -55,6 +56,11 @@ namespace Assignment_4_GUI
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_title_Click(object sender, EventArgs e)
         {
 
         }

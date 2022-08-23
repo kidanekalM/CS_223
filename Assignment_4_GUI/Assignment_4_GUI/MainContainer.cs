@@ -25,10 +25,11 @@ namespace Assignment_4_GUI
             {
                 ActiveMdiChild.Close();
             }
+            
             Form1 form = new Form1(loginForm);
             form.MdiParent = this;
+            form.StartPosition = FormStartPosition.CenterParent;
             form.Show();
-           
         }
 
         private void MainContainer_FormClosing(object sender, FormClosingEventArgs e)

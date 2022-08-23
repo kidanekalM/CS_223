@@ -22,11 +22,12 @@ namespace Assignment_4_GUI
         {
             if (txt_Username.Text == "Admin" && txt_Password.Text == "0")
             {
-            Hide();
+                 Hide();
                 username = txt_Username.Text;
-
+                
             MainContainer f = new MainContainer(this);
                 f.Show();
+
             }
             else
             {

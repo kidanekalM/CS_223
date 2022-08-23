@@ -31,6 +31,7 @@
             this.lbl_description = new System.Windows.Forms.Label();
             this.lbl_price = new System.Windows.Forms.Label();
             this.lbl_title = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_description
@@ -47,7 +48,7 @@
             // 
             this.lbl_price.AutoSize = true;
             this.lbl_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_price.Location = new System.Drawing.Point(239, 78);
+            this.lbl_price.Location = new System.Drawing.Point(249, 76);
             this.lbl_price.Name = "lbl_price";
             this.lbl_price.Size = new System.Drawing.Size(48, 16);
             this.lbl_price.TabIndex = 2;
@@ -63,12 +64,23 @@
             this.lbl_title.Size = new System.Drawing.Size(50, 24);
             this.lbl_title.TabIndex = 3;
             this.lbl_title.Text = "Title";
+            this.lbl_title.Click += new System.EventHandler(this.lbl_title_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(238, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "$";
             // 
             // ProductCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.lbl_price);
             this.Controls.Add(this.lbl_description);
@@ -83,5 +95,6 @@
         private System.Windows.Forms.Label lbl_description;
         private System.Windows.Forms.Label lbl_price;
         private System.Windows.Forms.Label lbl_title;
+        private System.Windows.Forms.Label label1;
     }
 }

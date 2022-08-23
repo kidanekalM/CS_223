@@ -166,6 +166,7 @@ namespace Assignment_4_GUI
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Close();
+            this.MdiParent.Close();
             Log.Show();
         }
 

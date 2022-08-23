@@ -33,9 +33,9 @@
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catagoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.viewProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +73,13 @@
             this.updateProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.updateProductsToolStripMenuItem.Text = "delete products";
             // 
+            // viewProductsToolStripMenuItem
+            // 
+            this.viewProductsToolStripMenuItem.Name = "viewProductsToolStripMenuItem";
+            this.viewProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewProductsToolStripMenuItem.Text = "view products";
+            this.viewProductsToolStripMenuItem.Click += new System.EventHandler(this.viewProductsToolStripMenuItem_Click);
+            // 
             // catagoryToolStripMenuItem
             // 
             this.catagoryToolStripMenuItem.Name = "catagoryToolStripMenuItem";
@@ -83,13 +90,6 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // viewProductsToolStripMenuItem
-            // 
-            this.viewProductsToolStripMenuItem.Name = "viewProductsToolStripMenuItem";
-            this.viewProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.viewProductsToolStripMenuItem.Text = "view products";
-            this.viewProductsToolStripMenuItem.Click += new System.EventHandler(this.viewProductsToolStripMenuItem_Click);
             // 
             // MainContainer
             // 

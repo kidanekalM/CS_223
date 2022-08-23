@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 
 namespace Assignment_4_GUI.Model
 {
-    internal class Item
+    public class Item
     {
         private static List<Item> Items = new List<Item>();
         public string Number { get; set; }

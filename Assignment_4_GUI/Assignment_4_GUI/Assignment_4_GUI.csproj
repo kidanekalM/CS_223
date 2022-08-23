@@ -46,6 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CircularPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DetailPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailPage.Designer.cs">
+      <DependentUpon>DetailPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="FlowTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +94,9 @@
     <Compile Include="ViewProductCard.Designer.cs">
       <DependentUpon>ViewProductCard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DetailPage.resx">
+      <DependentUpon>DetailPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FlowTest.resx">
       <DependentUpon>FlowTest.cs</DependentUpon>
     </EmbeddedResource>
