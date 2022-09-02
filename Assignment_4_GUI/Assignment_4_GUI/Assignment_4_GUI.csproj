@@ -49,6 +49,12 @@
     <Compile Include="CircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DBConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBConnect.Designer.cs">
+      <DependentUpon>DBConnect.cs</DependentUpon>
+    </Compile>
     <Compile Include="DetailPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     <Compile Include="ViewProductCard.Designer.cs">
       <DependentUpon>ViewProductCard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DBConnect.resx">
+      <DependentUpon>DBConnect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetailPage.resx">
       <DependentUpon>DetailPage.cs</DependentUpon>
     </EmbeddedResource>
