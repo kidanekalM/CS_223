@@ -32,7 +32,16 @@ namespace Assignment_4_GUI.Model
 
                 SqlConnection con = new SqlConnection("Data Source =.;Initial Catalog=projectdb;Integrated Security=True;");
                 con.Open();
-                SqlCommand cmd = new SqlCommand($"insert into item values({this.Number},'{this.Date}',{this.Inventory_Num},'{this.ObjectName}',{this.price},{this.Count},{this.isAvailable})", con);
+                int x;
+                if (this.isAvailable == true)
+                {
+                    x = 0;
+                }
+                else
+                {
+                    x = 1;
+                }
+                SqlCommand cmd = new SqlCommand($"insert into item values({this.Number},'{this.Date}',{this.Inventory_Num},'{this.ObjectName}',{this.price},{this.Count},{x})", con);
                 // SqlDataAdabter da = cmd.
                 cmd.ExecuteReader();
                 

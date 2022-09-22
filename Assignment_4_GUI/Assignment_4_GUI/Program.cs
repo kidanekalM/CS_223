@@ -18,7 +18,7 @@ namespace Assignment_4_GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DBConnect());
+            Application.Run(new LoginForm());
         }
     }
 }
